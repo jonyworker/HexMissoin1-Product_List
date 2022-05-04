@@ -1,0 +1,19 @@
+:root {
+  --color-primary: #3F5D45;
+  --color-secondary: #EAF0ED;
+}
+
+* {
+  /* outline: 1px solid green; */
+  color: var(--color-primary);
+  font-size: 16px;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}

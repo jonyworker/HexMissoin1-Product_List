@@ -1,0 +1,65 @@
+
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+/* header section */
+.header-content {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+  .logo {
+    width: 220px;
+  }
+  .main-nav {
+    margin-left: auto;
+    ul {
+      display: flex;
+    }
+    li a {
+      display: block;
+      padding: 12px 30px;
+    }
+  }
+  .cart {
+    width: 24px;
+    margin-left: 20px;
+  }
+}
+
+
+/* banner section */
+.banner-section {
+  margin-bottom: 60px;
+  .banner-title {
+    display: none;
+  }
+}
+
+
+/* product section */
+/* side-menu section */
+.product-content {
+  width: 300px;
+  h2,
+  .side-menu-item a {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 40px;
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+    padding: 16px;
+    text-align: center;
+  }
+}
+.side-menu-item a {
+  display: block;
+  color: var(--color-primary);
+  background-color: #fff;
+  border: 1px solid var(--color-secondary);
+  &active a {
+    background-color: var(--color-secondary);
+    border: none;
+  }
+}
