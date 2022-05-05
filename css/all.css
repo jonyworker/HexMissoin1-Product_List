@@ -377,6 +377,7 @@ a {
   border: none;
   width: 64px;
   height: 56px;
+  cursor: pointer;
 }
 
 .bottom-cta-content .input-group .btn-submit .icon-submit {
