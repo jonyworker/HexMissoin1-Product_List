@@ -2,8 +2,8 @@ $color-primary:#3F5D45;
 $color-secondary: #EAF0ED;
 
 * {
-  /* outline: 1px solid green; */
-  color: var(--color-primary);
+  // outline: 1px solid green;
+  color: $color-primary;
   font-size: 16px;
   box-sizing: border-box;
 }

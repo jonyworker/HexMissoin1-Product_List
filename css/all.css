@@ -53,8 +53,7 @@ table {
 }
 
 * {
-  /* outline: 1px solid green; */
-  color: var(--color-primary);
+  color: #3F5D45;
   font-size: 16px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -75,8 +74,12 @@ a {
 }
 
 .container {
-  width: 960px;
+  width: 940px;
   margin: 0 auto;
+}
+
+.container.mini-size {
+  width: 780px;
 }
 
 /* header section */
@@ -124,10 +127,15 @@ a {
 }
 
 /* product section */
-.product-content {
+.product-section {
+  margin-bottom: 60px;
+}
+
+.product-content .product-content-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 30px;
 }
 
 /* side-menu */
@@ -166,7 +174,6 @@ a {
   border: none;
 }
 
-/* product section */
 /* product-list */
 .product-list {
   display: -webkit-box;
@@ -183,7 +190,12 @@ a {
 
 .product-list .list-item {
   width: 300px;
-  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.product-list .list-item:last-child,
+.product-list .list-item:nth-last-child(2) {
+  margin-bottom: 0;
 }
 
 .product-list .img-area {
@@ -259,5 +271,160 @@ a {
   color: #3F5D45;
   background-color: #EAF0ED;
   cursor: pointer;
+}
+
+/* pagination section */
+.pagination-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.pagination-list .page-item {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #EAF0ED;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pagination-list .page-item .page-link {
+  margin: auto;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.pagination-list .page-item .page-link div {
+  width: 24px;
+}
+
+.pagination-list .page-item.active {
+  border: none;
+  background-color: #3F5D45;
+}
+
+.pagination-list .page-item.active .page-link {
+  color: #EAF0ED;
+}
+
+/* bottom-cta section */
+.bottom-cta-section {
+  background-color: #3F5D45;
+}
+
+.bottom-cta-content {
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bottom-cta-content .small-logo {
+  width: 40px;
+  margin-right: 20px;
+}
+
+.bottom-cta-content h2 {
+  color: #EAF0ED;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  margin-right: auto;
+}
+
+.bottom-cta-content .input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bottom-cta-content .input-group .input-group-prepend {
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #EAF0ED;
+}
+
+.bottom-cta-content .input-group .input-group-prepend div {
+  width: 24px;
+}
+
+.bottom-cta-content .input-group #input-email {
+  background-color: #EAF0ED;
+  width: 272px;
+  padding: 16px 8px;
+  border: none;
+}
+
+.bottom-cta-content .input-group #input-email:focus {
+  outline: none;
+}
+
+.bottom-cta-content .input-group .btn-submit {
+  background-color: #FFE180;
+  border: none;
+  width: 64px;
+  height: 56px;
+}
+
+.bottom-cta-content .input-group .btn-submit .icon-submit {
+  margin: 0 auto;
+  width: 24px;
+}
+
+.footer-section {
+  background-color: #EAF0ED;
+}
+
+.footer-section .footer-content {
+  padding: 30px 0;
+}
+
+.footer-section .footer-content .footer-logo {
+  width: 172px;
+  margin-bottom: 116px;
+}
+
+.footer-section .footer-content address {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+.footer-section .footer-content .copyright-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.footer-section .footer-content .copyright-wrap .social-link-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: auto;
+}
+
+.footer-section .footer-content .copyright-wrap .social-link-item:first-of-type {
+  margin-right: 8px;
+}
+
+.footer-section .footer-content .copyright-wrap .social-link-icon {
+  width: 32px;
 }
 /*# sourceMappingURL=all.css.map */
