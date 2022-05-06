@@ -101,7 +101,7 @@
   }
   .img-area {
     position: relative;
-    h3 {
+    .img-text {
       position: absolute;
       display: block;
       top: 0;
@@ -130,11 +130,9 @@
   }
   .item-text {
     display: flex;
-    .product-name {
-      flex: 1;
-      border-left: 1px solid $color-secondary;
-    }
-    p {
+    
+    .product-name,
+    .product-price {
       padding: 14px 25px;
       border-right: 1px solid $color-secondary;
       font-size: 20px;
@@ -142,6 +140,10 @@
       font-weight: 300;
       color: $color-primary;
       text-align: center;
+    }
+    .product-name {
+      flex: 1;
+      border-left: 1px solid $color-secondary;
     }
     .product-price {
       font-weight: 600;
